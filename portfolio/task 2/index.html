@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container">
+      <div class="title">
+        
+        
+      </div>
+      <div class="inputs">
+        <input type="text" id="input"   placeholder="0" >
+      </div>
+      <div class="buttons">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button  onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <br>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <br>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="calculateResult()">=</button>
+        <br>
+        <div class="clear">
+          <button  onclick="OneValue()">X</button>
+          <button onclick="clearDisplay()">Clear</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      function appendToDisplay(value) {
+          var inputField = document.getElementById('input');
+          var currentValue = inputField.value;
+          currentValue += value;
+          inputField.value = currentValue;
+      }
+
+      function clearDisplay() {
+          var inputField = document.getElementById('input');
+          inputField.value = '';
+      }
+
+      function calculateResult() {
+          var inputField = document.getElementById('input');
+          var expression = inputField.value;
+          try {
+              var result = eval(expression);
+              inputField.value = result;
+          } catch (error) {
+              inputField.value = 'Error';
+          }
+      }
+      function OneValue() {
+    var inputField = document.getElementById('input');
+    var currentValue = inputField.value;
+    if (currentValue.length > 0) {
+        currentValue = currentValue.slice(0, -1); // Remove the last character
+        inputField.value = currentValue;
+    }
+}
+
+  </script>
+
+
+</html>

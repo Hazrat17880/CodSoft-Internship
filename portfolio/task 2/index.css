@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 570px;
+    margin:100px 400px;
+}
+.inputs{
+    background-color: red;
+    height: 130px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.inputs input,::placeholder{
+    background-color: red;
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    color: white;
+    font-size: 50px;
+    padding-right: 20px;
+
+}
+.buttons{
+    margin-top: 10px;
+    
+    
+   
+}
+ button{
+    margin-left: 20px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 50%;
+   text-align: center;
+   font-size: 30px;
+   padding: 20px;
+   font-weight: bold;
+   
+}
+button:hover{
+    background-color: red;
+}
+.clear{
+    padding-top: 10px;
+}
