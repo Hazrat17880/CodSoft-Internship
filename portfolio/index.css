@@ -1,0 +1,107 @@
+.container-intro{
+    margin-top: 150px;
+    
+}
+.container-intro ul ,li{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.icons a{
+    font-size: 20px;
+}
+.icons a:hover{
+    color:red;
+}
+.intro-title{
+    padding-left: 40px;
+    opacity: 0.9;
+}
+.intro-desc{
+    padding-left: 40px;
+    line-height: 35px;
+    margin-top: 50px;
+    opacity: 0.8;
+    font-family: sans-serif;
+    word-spacing: 5px;
+}
+.buttons{   
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#btn-contact{
+    margin-left: 0px;
+}
+#btn-resume{
+    margin-left: 40px;
+}
+
+
+/* about section coding is here  */
+
+.about-intro{
+    opacity: 0.9;
+}
+.about-sec{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.skill-sec{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.proficiency{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.proficiency-container{
+    display: flex;
+    margin-top:69px;
+    
+}
+.proficiency img{
+    width: 400px;
+    height: 400px;
+}
+.pro-details{
+    padding-left: 40px;
+}
+.pro-details label{
+    padding-top: 35px;
+}
+.pro-details input{
+    width: 23px;
+}
+
+.project-sec{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.pro-types{
+    padding: 40px;
+}
+.card .card-img-top{
+    width: 400px;
+    height: 150px;
+}
+.more-project-btn a{
+    color: black;
+    font-weight: bold;
+}
+
+
+/* resume  */
+#resume{
+    padding-top: 100px;
+}
+
+ /* contact  */
+ #contact{
+    padding-top: 100px;
+ }
